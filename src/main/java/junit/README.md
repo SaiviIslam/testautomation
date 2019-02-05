@@ -1,5 +1,5 @@
 # Lektion 1
-
+hello test
 - Jag kommer köra IntelliJ (Eclipse eller NetBeans 
 funkar också, men jag kommer inte kunna stötta)
 - Git
