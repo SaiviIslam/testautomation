@@ -20,7 +20,7 @@ public class StringUtility {
         {
             reverse = reverse + original.charAt(i);
         }
-        return reverse.toLowerCase();
+        return reverse;
 
     }
 

@@ -28,7 +28,7 @@ public class MyFirstSeleniumTest {
         inputField.sendKeys("apa");
         inputField.submit();
         WebElement firstSearchResult = myBrowser.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div[1]/div/div/div[1]/a/h3"));
-        
+
         Assert.assertEquals(
                 "American Psychological Association (APA)",
                 firstSearchResult.getText()
