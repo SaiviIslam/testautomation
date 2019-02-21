@@ -7,7 +7,7 @@
   
 2.Vilka antaganden har du gjort? Det vill säga vilka beslut har du tagit och varför?
 
-  I made assumptions for valid and invalid  mail address in this assignment, because i wanted to write test cases for both valid and         invalid mail address, I also understood that CamelCase should be like Saivihejsan also words should not have space between them. 
+  I made assumptions for valid and invalid  mail address in this assignment, because i wanted to write test cases for both valid and         invalid mail address. 
 
 3.Hittade du några buggar? Alltså något som du anser man behöver undersöka mer innan man kan produktionssätta systemet.
 
