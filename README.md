@@ -3,11 +3,11 @@
 
 1.Vilken teknik använde du för att välja testfallen?
 
-  jag använde juint för att välja testfallen.
-
+  I choose testcases from the requirements documentation by using one of the blackbox testing techniques which is Equivalance partitioning   testing because in this assignment i had to choose valid and invalid string input. I used white box testing technique to understand the   structure and design of the code and also the input and output flow through the code.
+  
 2.Vilka antaganden har du gjort? Det vill säga vilka beslut har du tagit och varför?
 
- jag har tagit beslut för att använda assertEquals method för att jamföra actuella resultatet med det förväntade resultatet.
+  I made assumptions for valid and invalid  mail address in this assignment, because i wanted to write test cases for both valid and         invalid mail address. 
 
 3.Hittade du några buggar? Alltså något som du anser man behöver undersöka mer innan man kan produktionssätta systemet.
 
@@ -15,4 +15,6 @@
 
 4.Vad var svårast med laborationen och varför var det svårast?
 
-  det svarast delen av laboration var att hitta buggen.
+The most difficult part of this assignment were to find how to implement a code to get reverse working, I changed the code so it works to have  a big letter at the end of the String which was a bug that already were in the code.
+
+  
