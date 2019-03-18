@@ -33,13 +33,6 @@ public class RestApiUserTest {
                 postUserResponse.getStatus()
         );
 
-      //  HttpResponse<String> logInUser = Unirest
-        //        .get("https://swagger-petstore.azurewebsites.net/v2/user/login")
-          //      .asString();
-        //Assert.assertEquals(
-          //      200,
-            //    logInUser.getStatus()
-        //);
 
         HttpResponse<String> logInUserWithRightUsernamePw = Unirest
                 .get("https://swagger-petstore.azurewebsites.net/v2/user/login?username=saivi&password=123456")
