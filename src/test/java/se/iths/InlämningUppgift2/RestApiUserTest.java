@@ -33,12 +33,20 @@ public class RestApiUserTest {
                 postUserResponse.getStatus()
         );
 
-        HttpResponse<String> logInUser = Unirest
-                .get("https://swagger-petstore.azurewebsites.net/v2/user/login")
+      //  HttpResponse<String> logInUser = Unirest
+        //        .get("https://swagger-petstore.azurewebsites.net/v2/user/login")
+          //      .asString();
+        //Assert.assertEquals(
+          //      200,
+            //    logInUser.getStatus()
+        //);
+
+        HttpResponse<String> logInUserWithRightUsernamePw = Unirest
+                .get("https://swagger-petstore.azurewebsites.net/v2/user/login?username=saivi&password=123456")
                 .asString();
         Assert.assertEquals(
                 200,
-                logInUser.getStatus()
+                logInUserWithRightUsernamePw.getStatus()
         );
 
 
@@ -67,7 +75,7 @@ public class RestApiUserTest {
         );
 
         HttpResponse<String> logInUserWithFelPw = Unirest
-                .get("https://swagger-petstore.azurewebsites.net/v2/user?saiviIslam&129872")
+                .get("https://swagger-petstore.azurewebsites.net/v2/user/login?username=saiviIslam&password=129872")
                 .asString();
         Assert.assertEquals(
                 400,
@@ -168,7 +176,8 @@ public class RestApiUserTest {
                 .asString();
 
         Assert.assertEquals(200,
-                getUpdatedUserResponse.getStatus());
+                getUpdatedUserResponse.getStatus()
+        );
 
 
 
