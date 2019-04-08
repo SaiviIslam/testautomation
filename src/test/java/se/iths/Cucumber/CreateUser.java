@@ -7,7 +7,6 @@ import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.junit.Assert;
 
 public class CreateUser {
@@ -98,15 +97,25 @@ public class CreateUser {
         );
     }
 
-    @Then("login users")
-    public void login_users() throws UnirestException {
-        HttpResponse<String> manyUserLogin = Unirest
-                .get("https://swagger-petstore.azurewebsites.net/v2/user/login")
+    @Then("login userA")
+    public void login_userA() throws UnirestException {
+        HttpResponse<String> loginUserA = Unirest
+                .get("https://swagger-petstore.azurewebsites.net/v2/user/login?username=linda&password=qr4345")
                 .asString();
         Assert.assertEquals(200,
-                manyUserLogin.getStatus());
+                loginUserA.getStatus());
+    }
+
+    @Then("login userB")
+    public void login_userB() throws UnirestException {
+        HttpResponse<String> loginUserB = Unirest
+                .get("https://swagger-petstore.azurewebsites.net/v2/user/login?username=maria&password=strom123")
+                .asString();
+        Assert.assertEquals(200,
+                loginUserB.getStatus());
 
     }
+
 
     @Then("delete users")
     public void delete_users() throws UnirestException {

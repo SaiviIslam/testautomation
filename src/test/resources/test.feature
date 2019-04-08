@@ -13,7 +13,8 @@ Feature:a cucumber assignment
   Scenario: create many user then login them and delete them
 
     Given create many users
-    Then login users
+    Then login userA
+    Then  login userB
     Then delete users
 
   Scenario: create a user and update the mail adress and then get the updated user
